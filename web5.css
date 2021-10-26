@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.hidden {
+  display: none;
+}
+/****************************************************************************/
+
+#overDiv {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.712);
+  z-index: 1;
+}
+#addingMovie {
+  width: 40vw;
+  height: 40vh;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  margin: 30vh 30vw;
+  border-radius: 10px;
+  box-shadow: 1px 2px 12px 0px rgb(54, 54, 54);
+  padding: 3vh 1vw;
+}
+#addingMovie input {
+  width: 38vw;
+  height: 4.5vh;
+  margin: 1vh 0;
+  border: 1px solid rgb(177, 177, 177);
+  font-size: 2.3vh;
+  padding: 7px;
+}
+#addingMovie input:focus {
+  background-color: rgba(250, 198, 131, 0.233);
+  outline: none;
+}
+#addingMovie label {
+  font-weight: bold;
+  color: rgb(77, 77, 77);
+}
+
+#addingMovie button:nth-of-type(1) {
+  height: 4.7vh;
+  cursor: pointer;
+  font-size: 2.2vh;
+  padding: 0 2.1vh;
+  border: none;
+  background: none;
+  color: rgb(74, 74, 223);
+  text-transform: capitalize;
+  margin-right: 1.8vh;
+}
+#addingMovie button:nth-of-type(2) {
+  height: 4.7vh;
+  cursor: pointer;
+  font-size: 2.2vh;
+  padding: 0 2.5vh;
+  border: none;
+  background: rgb(74, 74, 223);
+  color: white;
+  text-transform: capitalize;
+  border-radius: 5px;
+  box-shadow: 1px 2px 12px 0px rgb(187, 187, 187);
+}
+#addingMovie button:nth-of-type(1):hover {
+  background-color: rgb(180, 200, 255);
+  border-radius: 5px;
+}
+#addingMovie button:nth-of-type(2):hover {
+  background-color: orangered;
+}
+
+/**************************************************************************/
+#headSec div {
+  width: 100%;
+  height: 9vh;
+  background-color: rgb(74, 74, 223);
+}
+
+#headSec h1 {
+  display: inline-block;
+  color: white;
+  text-transform: capitalize;
+  margin: 3vh 0 0 3vw;
+}
+#headSec button {
+  float: right;
+  height: 60%;
+  width: 9%;
+  margin: 2vh 2% 0 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(233, 233, 233);
+  background-color: orangered;
+  border: none;
+}
+#headSec button:hover {
+  color: rgb(83, 69, 30);
+  background-color: orange;
+  transition: all 0.5s ease-in-out;
+}
+
+/*******************************************************************/
+
+#favSec {
+  margin-top: 5vh;
+  /* border: 1px solid; */
+}
+#favSec > div {
+  width: 40vw;
+  height: 20vh;
+  box-shadow: 1px 2px 12px 0px rgb(187, 187, 187);
+  border-radius: 5px;
+  margin-left: 30vw;
+  margin-bottom: 5vh;
+  /* position: relative; */
+}
+#div0 {
+  width: 40vw;
+  height: 15vh;
+  /* border: 1px solid; */
+  margin-left: 30vw;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 2px 12px 0px rgb(187, 187, 187);
+  font-size: 3.3vh;
+  padding-top: 5vh;
+}
+
+.imgStyle {
+  height: 100%;
+  width: 40%;
+  border-radius: 5px 0 0 5px;
+}
+
+.pStyle {
+  display: inline-block;
+  font-size: 3.3vh;
+  font-weight: bold;
+  margin: 2px 0 0 0;
+  /* position: fixed; */
+  position: relative;
+  bottom: 97px;
+  left: 38px;
+}
+
+.divSonStyle {
+  /* display: inline-block; */
+  width: 9vw;
+  color: rgb(233, 233, 233);
+  background-color: orangered;
+  border-radius: 3vh;
+  font-size: 3vh;
+  font-weight: bold;
+  padding: 0.8vh 3vh;
+  /* position: fixed; */
+  position: relative;
+  bottom: 80.2px;
+  left: 18vw;
+}
+
+@media only screen and (max-width: 630px) {
+  #headSec button {
+    width: 31%;
+  }
+  #addingMovie {
+    width: 80vw;
+    margin: 30vh 10vw;
+  }
+  #addingMovie input {
+    width: 75vw;
+    margin: 1vh 0vw 1vh 1vw;
+  }
+  #addingMovie label {
+    margin-left: 1vw;
+  }
+  #favSec > div {
+    width: 90vw;
+    height: 12vh;
+    margin-left: 5vw;
+    margin-bottom: 2.3vh;
+  }
+
+  #favSec {
+    margin-top: 3vh;
+  }
+  .imgStyle {
+    width: 33%;
+  }
+  .pStyle {
+    display: inline-block;
+    font-size: 3.3vh;
+    font-weight: bold;
+    margin: 2px 0 0 0;
+    /* position: fixed; */
+    position: relative;
+    bottom: 55px;
+    left: 38px;
+  }
+  .divSonStyle {
+    /* display: inline-block; */
+    width: 35vw;
+    color: rgb(233, 233, 233);
+    background-color: orangered;
+    border-radius: 3vh;
+    font-size: 2.3vh;
+    font-weight: bold;
+    padding: 0.8vh 3vh;
+    /* position: fixed; */
+    position: relative;
+    bottom: 50px;
+    left: 36vw;
+  }
+}
